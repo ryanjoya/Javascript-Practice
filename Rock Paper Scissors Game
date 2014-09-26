@@ -12,11 +12,7 @@ var compare = function(choice1, choice2)
 {
     if(choice1 === choice2)
     {
-    choice1 = userChoice = prompt
-    ("You tied. Do you choose rock, paper or scissors?");
-    
-    choice2 = computerChoice = Math.random();
-    compare(choice1, choice2); 
+    return "You both got shot.";
     }
     
     else if(choice1 === "rock")
@@ -59,3 +55,10 @@ var compare = function(choice1, choice2)
 }
 
 compare(userChoice, computerChoice); 
+while (userChoice === computerChoice)
+{
+    choice1 = userChoice = prompt
+    ("You tied. Do you choose rock, paper or scissors?");
+    choice2 = computerChoice = Math.random();
+    compare(choice1, choice2); 
+}
